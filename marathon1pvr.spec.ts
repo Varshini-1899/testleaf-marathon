@@ -31,10 +31,4 @@ test('Booking a movie ticket',async ({page})=>{
       console.log('billingamount:',billing);
 
       await page.locator("//button[@class='sc-bbbBoY kbsOBB btn-proceeded']").click();
-
-      
-
-
-
-
 } )

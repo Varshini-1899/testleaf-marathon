@@ -1,9 +1,7 @@
 import {expect,test} from "@playwright/test";
 test('Booking a movie ticket',async ({page})=>{
-    // 1. launch page
     await page.goto ("https://www.pvrcinemas.com/");
     await page.waitForLoadState("domcontentloaded");
-  //  2. select the city
   await page.locator('//div[@class="p-dropdown p-component p-inputwrapper custom-icon"]').click();
   await page.locator('//input[@class="p-inputtext p-component p-autocomplete-input p-autocomplete-input"]').fill("Chennai");
   await page.locator('//li[text() ="Chennai"]').click();
